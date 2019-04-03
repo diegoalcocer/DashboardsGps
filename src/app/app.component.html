@@ -1,0 +1,18 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+  <div class="row">
+    
+    <app-sidebar (featureSelected)="onNavigate($event)"></app-sidebar>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+      <app-dashboard *ngIf="loadedFeature === 'dashboard'"></app-dashboard>
+      <app-alerts *ngIf="loadedFeature === 'alerts'"></app-alerts>
+      <app-maps *ngIf="loadedFeature === 'maps'"></app-maps>
+      <app-customers *ngIf="loadedFeature === 'customers'"></app-customers>
+      <app-reports *ngIf="loadedFeature === 'reports'"></app-reports>
+      <app-current-data *ngIf="loadedFeature === 'current-data'"></app-current-data>
+      <app-last-quarter *ngIf="loadedFeature === 'last-quarter'"></app-last-quarter>
+
+    </main>
