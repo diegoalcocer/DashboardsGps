@@ -16,22 +16,31 @@
       <div class="col-md">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title">Idling Time</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Daily Average per asset</h6>
-            <h2 class="card-text">8 min</h2>
+            <h5 class="card-title">Speeding Violations</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Vehicles: Average per day</h6>
+            <h2 class="card-text">Total: 4</h2>
+            <canvas baseChart
+              [data]="speedingViolationsChartData"
+              [labels]="speedingViolationsChartLabels"
+              [chartType]="doughnutChartType"
+              ></canvas>
             <a href="#" class="card-link">Details</a>
           </div>
         </div>
       </div>
-      <div class="col-md">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Time non-working hours</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Daily Average per asset</h6>
-            <h2 class="card-text">0 min</h2>
-            <a href="#" class="card-link">Details</a>
-          </div>
-        </div>
+      <div class="col-md" style="border:1px solid rgba(0,0,0,.125)">
+        <!-- <div class="card" style="width: 18rem;">
+          <div class="card-body"> -->
+            <h5 class="card-title">Fuel Purchased</h5>
+            <h6 class="card-subtitle mb-2 text-muted">By Vehicle in USD</h6>
+            <canvas baseChart
+              [data]="fuelChartData"
+              [labels]="fuelChartLabels"
+              [chartType]="fuelChartType"
+              ></canvas>
+            <!-- <a href="#" class="card-link">Details</a> -->
+          <!-- </div>
+        </div> -->
       </div>
       <div class="col-md">
           <div class="card" style="width: 18rem;">
@@ -39,10 +48,21 @@
               <h5 class="card-title">Idling time</h5>
               <h6 class="card-subtitle mb-2 text-muted">Total</h6>
               <h2 class="card-text">26%</h2>
+              <canvas baseChart
+              [data]="idlingTimeChartData"
+              [labels]="idlingTimeChartLabels"
+              [chartType]="doughnutChartType"
+              ></canvas>
               <a href="#" class="card-link">Details</a>
             </div>
           </div>
         </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div style="color: white">.</div>
+
+      </div>
     </div>
     <div class="row">
         <div class="col-md">
@@ -68,20 +88,14 @@
         <div class="col-md">
             <div class="card" style="width: 18rem;">
               <div class="card-body">
-                <h5 class="card-title">Distance Traveled</h5>
+                <h5 class="card-title">Distance Traveled Km</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Daily Average per asset</h6>
-                <div class="row">
-                  <div class="col-sm">Luis Rodriguez</div>
-                  <div class="col-sm">350 km</div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">Kim Jefferson</div>
-                    <div class="col-sm">320 km</div>
-                  </div>
-                  <div class="row">
-                      <div class="col-sm">Juan Perez</div>
-                      <div class="col-sm">246 km</div>
-                    </div>
+                    <canvas baseChart
+              [data]="distanceTimeChartData"
+              [labels]="distanceChartLabels"
+              [chartType]="barChartType"
+              [legend]="false"
+              ></canvas>
                 <a href="#" class="card-link">Details</a>
               </div>
             </div>
@@ -89,4 +103,4 @@
       </div>
 
   </div>
-  <h2>Section title</h2>
+  <!-- <h2>Section title</h2> -->
