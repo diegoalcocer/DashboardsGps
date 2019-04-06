@@ -27,14 +27,14 @@ export class MapsComponent implements OnInit {
 
       const data = google.visualization.arrayToDataTable([
         ['Lat', 'Long', 'Name', 'Marker'],
-        [38.926523,  -77.043718, 'Santiago Pesantez.', 'blue'],
-        [38.91262 , -77.023779, 'Diego Alcocer', 'green'],
-        [38.902038, -77.049372, 'Jorge Palma', 'blue'],
+        [38.926523,  -77.043718, 'Santiago P.', 'blue'],
+        [38.91262 , -77.023779, 'Diego A.', 'green'],
+        [38.902038, -77.049372, 'Jorge P.', 'blue'],
         [38.901224 , -77.030597, 'Donis A.', 'red'],
-        [38.908384, -77.042463, 'Ivan Narvaez', 'green'],
-        [38.892177, -77.060128, 'Oscar Santillan', 'red'],
-        [38.89287, -77.040381, 'Pepe Lepu', 'blu'],
-        [38.905962, -77.062397, 'Rvd. Marilyn Manson', 'red'],
+        [38.908384, -77.042463, 'Ivan N.', 'green'],
+        [38.892177, -77.060128, 'Oscar S.', 'red'],
+        [38.89287, -77.040381, 'Pepe Lepu', 'blue'],
+        [38.905962, -77.062397, 'Rvd. Marilyn M.', 'red'],
         [38.899744, -77.030342, 'Lorena Bobbitt', 'green']
       ]);
 
